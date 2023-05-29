@@ -48,7 +48,7 @@ class TabularDataClean():
     def load_airbnb(self):
         df = pd.read_csv('clean_tabular_data.csv')
         features = df.drop(columns= ['ID', 'Category', 'Title', 'Description', 'Amenities', 'Location', 'url'])
-        labels = df[["Price_Night"]]
+        labels = df["Price_Night"]
         loaded_data = (features,labels)
         return loaded_data
     
