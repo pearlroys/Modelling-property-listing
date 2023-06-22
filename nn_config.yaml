@@ -1,0 +1,4 @@
+optimiser: Adam
+learning_rate: 0.001
+hidden_layer_width: 9
+model_depth: 2
