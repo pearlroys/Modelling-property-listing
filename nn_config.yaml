@@ -2,3 +2,5 @@ optimiser: Adam
 learning_rate: 0.001
 hidden_layer_width: 9
 model_depth: 2
+epochs: 2
+dropout: 0.2
