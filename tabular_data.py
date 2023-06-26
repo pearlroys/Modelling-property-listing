@@ -6,6 +6,8 @@ import pandas as pd
 from datetime import datetime
 
 class TabularDataClean():
+    """this class is used to clean the tabular data.
+    """
     def __init__(self) -> None:
         pass
 
