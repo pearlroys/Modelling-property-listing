@@ -1,8 +1,6 @@
 
 # Modelling-airbnbs-property-listing-dataset-
-This project fulfills the data science component of the AiCore data career accelerator program. It aims to build a powerful and user-friendly framework for training, 
-
-tuning, and evaluating models on various tasks handled by the Airbnb team. 
+This project fulfills the data science component of the AiCore data career accelerator program. It aims to build a powerful and user-friendly framework for training,tuning, and evaluating models on various tasks handled by the Airbnb team. 
 
 
 ## Milestone 1
@@ -57,7 +55,7 @@ In this milestone, a neural network was developed using PyTorch. The neural netw
 
 -Developed a neural network using PyTorch for the airbnb dataset
 -Created a custom dataset to handle the airbnb data appropriately
--Implemented a linear regression model with 11 numerical features as inputs and price per night as the target label
+-Implemented a linear regression model with 9 numerical features as inputs and price per night as the target label
 -Utilized the ReLU activation function for introducing non-linearity in the model
 -Incorporated dropout to prevent overfitting
 -Conducted hyperparameter tuning to optimize the model's performance
