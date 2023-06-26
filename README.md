@@ -26,7 +26,7 @@ These models were trained, evaluated, and compared based on their performance in
 
 <img width="818" alt="Screenshot 2023-06-26 at 15 37 19" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/d55dc820-5ad0-4003-a996-bb7380f07284">
 
-# finetuning
+# Finetuning of model parameters
 
 In addition, hyperparameter tuning was performed for each model using grid search to find the optimal hyperparameters. The evaluation metrics of each model were calculated and saved in the repository for further analysis.
 
@@ -77,7 +77,7 @@ In this milestone, a neural network was developed using PyTorch. The neural netw
 
 ## Milestone 5
 
-In this milestone, we leveraged the existing neural network code structure to develop a multiclass classification model. The objective was to predict the number of bedrooms for each property in the dataset. By reusing the neural network framework, we were able to efficiently adapt it to the new classification task. The steps included:
+In this milestone, I leveraged the existing neural network code structure to develop a multiclass classification model. The objective was to predict the number of bedrooms for each property in the dataset. By reusing the neural network framework, I was  able to efficiently adapt it to the new classification task. The steps included:
 
 - Implementing a multiclass classification neural network using the existing code structure from the previous milestone
 - Predicting the number of bedrooms for each property using the neural network model
