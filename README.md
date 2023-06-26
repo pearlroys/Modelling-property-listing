@@ -42,3 +42,46 @@ To build this module, several functions from the linear regression model were ad
 By implementing these changes, the classification model was tailored to suit the specific task of predicting property categories based on the given features.
 
 <img width="1106" alt="Screenshot 2023-06-26 at 15 41 56" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/a3126adc-20ad-4d49-8419-787d7c135c1a"> 
+
+## Milestone 4
+
+<img width="1112" alt="Screenshot 2023-06-26 at 15 52 45" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/12a76bac-d53f-46f8-b00f-1056cda68406">
+
+
+In this milestone, a neural network was developed using PyTorch. The neural network architecture was designed specifically for the airbnb dataset used in this project. A custom dataset was created to handle the data appropriately. To do this I:
+
+-Developed a neural network using PyTorch for the airbnb dataset
+-Created a custom dataset to handle the airbnb data appropriately
+-Implemented a linear regression model with 11 numerical features as inputs and price per night as the target label
+-Utilized the ReLU activation function for introducing non-linearity in the model
+-Incorporated dropout to prevent overfitting
+-Conducted hyperparameter tuning to optimize the model's performance
+-Trained multiple models with different hyperparameters using a training loop
+-Calculated train and validation loss using mean squared error (MSE) as the loss function
+-Assessed model performance based on validation root mean squared error (RMSE)
+-Selected the model with the lowest validation RMSE as the best model
+
+
+
+- The loss of each model was visualised USING a tensorboard:
+
+<img width="736" alt="Screenshot 2023-06-26 at 15 49 33" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/802c6ed8-c9ef-41c3-916a-39ab37185b56">
+
+
+- The loss for the best performing model can be seen below:
+
+<img width="884" alt="Screenshot 2023-06-26 at 15 51 50" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/206b420a-c4c3-49e0-bd3d-21b66111466c">
+
+
+
+
+## Milestone 5
+
+In this milestone, we leveraged the existing neural network code structure to develop a multiclass classification model. The objective was to predict the number of bedrooms for each property in the dataset. By reusing the neural network framework, we were able to efficiently adapt it to the new classification task. The steps included:
+
+- Implementing a multiclass classification neural network using the existing code structure from the previous milestone
+- Predicting the number of bedrooms for each property using the neural network model
+- Including the property category data as a feature in the model
+- Utilizing One Hot Encoding to convert the categorical data into numerical format
+- Expanding the feature set by adding 5 additional features after the One Hot Encoding process and
+- Evaluating the model's performance using accuracy, precision, and recall metrics
