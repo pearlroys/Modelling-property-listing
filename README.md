@@ -24,7 +24,8 @@ Multiple regression algorithms were employed, including Stochastic Gradient Desc
 
 These models were trained, evaluated, and compared based on their performance in predicting the price per night accurately.
 
-<img width="818" alt="Screenshot 2023-06-26 at 15 37 19" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/d55dc820-5ad0-4003-a996-bb7380f07284">
+<img width="836" alt="Screenshot 2023-06-26 at 16 08 34" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/49471656-2a2a-4b02-b258-ecb43069d06a">
+
 
 # Finetuning of model parameters
 
@@ -32,7 +33,8 @@ In addition, hyperparameter tuning was performed for each model using grid searc
 
 Finally, the evaluation metrics were analyzed to identify the model with the highest accuracy. This model would be considered the best performer among the regression models tested.
 
-<img width="1057" alt="Screenshot 2023-06-26 at 15 39 59" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/4364603d-79b2-42a2-a7d2-7ef630b13eb7">
+<img width="1060" alt="Screenshot 2023-06-26 at 16 09 09" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/602f7a28-824d-4b91-8634-de3336fef24a">
+
 
 ## Milestone 3 
 A classification model was developed to predict the property category. Various classification algorithms, including Logistic Regression, Decision Tree, Gradient Boosting Classifier, and Random Forest Classifier, were trained and evaluated.
@@ -41,11 +43,13 @@ To build this module, several functions from the linear regression model were ad
 
 By implementing these changes, the classification model was tailored to suit the specific task of predicting property categories based on the given features.
 
-<img width="1106" alt="Screenshot 2023-06-26 at 15 41 56" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/a3126adc-20ad-4d49-8419-787d7c135c1a"> 
+<img width="1056" alt="Screenshot 2023-06-26 at 16 09 32" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/1f39c6ca-0c59-410b-aceb-c5fe69de39a3">
 
 ## Milestone 4
 
-<img width="1112" alt="Screenshot 2023-06-26 at 15 52 45" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/12a76bac-d53f-46f8-b00f-1056cda68406">
+
+<img width="1112" alt="Screenshot 2023-06-26 at 16 09 59" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/745f8f16-0164-45bb-a685-be1c6c637715">
+
 
 
 In this milestone, a neural network was developed using PyTorch. The neural network architecture was designed specifically for the airbnb dataset used in this project. A custom dataset was created to handle the data appropriately. To do this I:
