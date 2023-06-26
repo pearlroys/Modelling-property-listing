@@ -14,7 +14,8 @@ tuning, and evaluating models on various tasks handled by the Airbnb team.
 - Data with missing values were dropped form the df, text data was formatted and cleaned and the data.
 - The data was returned as tuples (features and labels) to be used by a machine learning model.
 
-<img width="848" alt="Screenshot 2023-06-26 at 15 30 25" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/73abcc21-9c36-4f05-bf65-2940620e2ab2">
+
+<img width="828" alt="Screenshot 2023-06-26 at 16 12 53" src="https://github.com/pearlroys/modelling-airbnbs-property-listing-dataset-/assets/103274172/6a8fbd39-c68e-4f9c-844a-8090a7b2a855">
 
 ## Milestone 2
 
