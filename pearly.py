@@ -1,13 +1,21 @@
-df = pd.DataFrame(data)
+# Create bins for months
+bins = [0, 25, 50, 75, 100]  # You can adjust the bin ranges as needed
 
-# Create a scatter plot using Matplotlib
-plt.figure(figsize=(12, 6))
-plt.scatter(df["Days"], df["NPS"], alpha=0.5)
+# Assign bins to months
+df['Month Bins'] = pd.cut(df['Months'], bins=bins)
+
+# Create a pivot table to count NPS categories for each bin
+pivot_df = df.pivot_table(index='Month Bins', columns='NPS', aggfunc='size', fill_value=0)
+
+# Create a bar plot using Seaborn
+sns.set(style="whitegrid")
+plt.figure(figsize=(10, 6))
+pivot_df.plot(kind='bar', stacked=True, color=sns.color_palette("Set3", n_colors=3))
 
 # Add labels and title
-plt.xlabel('Days')
-plt.ylabel('NPS Category')
-plt.title('Number of Days vs. NPS Category')
+plt.xlabel('Months')
+plt.ylabel('Count')
+plt.title('NPS Categories by Months')
 
 # Show the plot
 plt.show()
