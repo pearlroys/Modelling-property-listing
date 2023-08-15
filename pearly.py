@@ -1,15 +1,18 @@
-# Create a pivot table to count NPS categories for each Gender
-pivot_df = df.pivot_table(index='Gender', columns='NPS', aggfunc='size', fill_value=0)
+ Create a pivot table to count NPS categories for each Product
+pivot_df = df.pivot_table(index='Product', columns='NPS', aggfunc='size', fill_value=0)
 
-# Create a bar plot using Seaborn
+# Normalize the pivot table to get proportions
+normalized_pivot_df = pivot_df.div(pivot_df.sum(axis=1), axis=0)
+
+# Create a stacked line plot using Seaborn
 sns.set(style="whitegrid")
-plt.figure(figsize=(8, 6))
-pivot_df.plot(kind='bar', stacked=True, color=sns.color_palette("Set3", n_colors=3))
+plt.figure(figsize=(10, 6))
+normalized_pivot_df.plot(kind='line', stacked=True, color=sns.color_palette("Set3", n_colors=3))
 
 # Add labels and title
-plt.xlabel('Gender')
-plt.ylabel('Count')
-plt.title('NPS Categories by Gender')
+plt.xlabel('Product')
+plt.ylabel('Proportion')
+plt.title('Stacked Line Plot of NPS Categories by Product ("prod_book")')
 
 # Show the plot
 plt.show()
