@@ -1,13 +1,12 @@
-# Create a DataFrame for actual target values
-y_actual_df = pd.DataFrame(y_test, columns=['Actual_Target'])
+sample_idx = 0  # Choose the index of the observation you want to analyze
+sample = X_test.iloc[sample_idx]
 
-# Reset index of X_test, y_pred_df, and y_actual_df before concatenating
-X_test_reset = X_test.reset_index(drop=True)
-y_pred_df_reset = y_pred_df.reset_index(drop=True)
-y_actual_df_reset = y_actual_df.reset_index(drop=True)
+# Calculate SHAP values for the chosen observation
+explainer = shap.TreeExplainer(model)
+shap_values = explainer.shap_values(sample.values.reshape(1, -1))
 
-# Concatenate the original dataset, predicted probabilities, and actual target values
-result_df = pd.concat([X_test_reset, y_pred_df_reset, y_actual_df_reset], axis=1)
+# Create a DataFrame to display the SHAP values in a tabular format
+shap_df = pd.DataFrame(data=shap_values[0], columns=X_test.columns)
 
-# Display the resulting DataFrame
-print(result_df)
+# Display the DataFrame containing SHAP values for the chosen observation
+print(shap_df)
