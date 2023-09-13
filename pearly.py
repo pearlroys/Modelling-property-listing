@@ -1,161 +1,70 @@
-Subtitle: Visualizing NPS Trends
+Certainly, I'll provide more details and expand the content over three PowerPoint slides.
 
-Project Overview:
+**Slide 1: Main NPS Project**
 
-Explored NPS (Net Promoter Score) trends using Power BI.
-Conducted fortnightly analysis of Promoters, Passives, Detractors, and NPS scores.
-Enabled tracking of trends over time.
-Key Insights:
+*Title: Main NPS Project*
 
-Examined how various factors impact NPS scores.
-Explored the influence of factors like response times, conditions, and tenure duration.
-Provided valuable insights into customer sentiment.
-Slide Title: Skills Learned in Power BI
+- **Data Sources:** In this significant project, I had the task of collecting data from a diverse range of sources, including Verint data, pre-authorization data, claims data, and more. These datasets provided critical insights into customer experiences.
 
-Data Manipulation:
+- **Learning SAS:** To effectively handle this complex data, I underwent intensive training in SAS, led by the exceptional Milan. In a relatively short time, I became proficient in SAS and Proc SQL, which significantly expedited data processing and analysis.
 
-Proficient in using DAX (Data Analysis Expressions) code for complex calculations.
-Creating new tables and measures to derive valuable insights from data.
-Data Integration:
+- **Data Understanding:** Understanding the data was a pivotal step. I meticulously dissected individual columns within the datasets, deciphering their meanings and relevance to the NPS project's goals.
 
-Skillful in establishing relationships between different data tables in Power BI.
-Importing, exporting, and refreshing data to ensure it remains up-to-date.
+**Slide 2: Skills Acquired**
 
-Certainly, here's the content divided into two slide pages:
+*Title: Skills Acquired*
 
-**Slide Page 1: Technical Challenge Overview**
+- **Technical Proficiency:** Through this project, I acquired an array of technical skills. This included mastering SAS and Proc SQL, which empowered me to manipulate and analyze data efficiently.
 
-- **Project Leadership:**
-  - Led a team of 8 members on a project involving hospital historical data. and won.
-  - Objective: Create a predictive model for hospital admissions using common ED data.
+- **Data Analysis Expertise:** I developed a keen aptitude for data cleaning, preprocessing, and complex dataset analysis. This skill set was instrumental in deriving meaningful insights.
 
-- **Key Findings:**
-  - Age emerged as a significant factor affecting admission rates, aligning with prior research.
-  - Absence of specific medical test details (biochemical markers, coagulation tests) raised accuracy concerns.
+- **Machine Learning Mastery:** Leveraging machine learning techniques, I excelled in creating predictive models and fine-tuning them for optimal performance.
 
-- **Surprising Results:**
-  - Unusually high accuracy achieved by utilizing ICD codes and patient comorbidities.
-  - Deviated from results in previous studies, highlighting innovation.
+**Slide 3: Methodologies and Impact**
 
-**Slide Page 2: Innovation and Impact**
+*Title: Methodologies and Impact*
 
-- **Innovation and Techniques:**
-  - Explored various methods: Lasso regularization, random forests, gradient boosting, and neural networks.
-  - Aimed to enhance accuracy and combat overfitting.
+- **Data Cleaning:** Ensuring data quality and consistency through thorough cleaning was a foundational step in this project. Clean data was crucial for accurate analysis and modeling.
 
-- **Timing Consideration:**
-  - Deliberated on the timing of model application: upon patient arrival or later in their ED stay.
-  - Considered impact on prediction effectiveness.
+- **Insightful Analysis:** I performed in-depth data analysis to extract actionable insights. This analytical approach revealed patterns and trends that informed our strategies.
 
-- **Potential Impact:**
-  - Tool excels in delivering reliable predictions using simple ED visit data.
-  - Acknowledges limitations due to missing details.
+- **Optimizing eNPS:** By concatenating admission details and closely analyzing the predictions, we were able to pinpoint areas for improvement in the employee Net Promoter Score (eNPS). This led to tangible enhancements in our strategies and ultimately improved eNPS performance.
 
-- **Benefits and Transformation:**
-  - Potential to reduce overtriage, leading to substantial cost savings.
-  - Optimizes resource management and supports triage nurses.
-  - Similar systems like eTriage have shown promise in enhancing patient flow and staff efficiency.
-  - Predictive model has the potential to transform healthcare operations and patient care by reducing overtriage, optimizing resources, and supporting healthcare professionals.
+Feel free to use these detailed slides as part of your presentation. You can further customize them by adding visuals, specific examples, or metrics to showcase the project's impact.
+Certainly, let's break down your experience with SHAP values and their impact into three slides:
 
-Feel free to use these two slide pages as part of your presentation. You can adjust the formatting and design as needed to create visually appealing slides.
+**Slide 1: Understanding SHAP Values**
 
+*Title: Understanding SHAP Values*
 
+- **Introduction to SHAP:** I delved into the world of SHAP (SHapley Additive exPlanations) values, a powerful tool for explaining machine learning models' predictions.
 
-Certainly, here's the content formatted for two PowerPoint slides:
+- **Interpreting Model Outputs:** SHAP values provided me with insights into how our models made predictions. They helped uncover the contributions of each feature to individual predictions.
 
-**Slide 1: Skills Gained During the Internship**
+- **Enhancing Explainability:** By utilizing SHAP values, I enhanced the explainability of our models. This not only boosted our confidence in model predictions but also enabled us to communicate model behavior more effectively.
 
-- Title: Skills Gained During the Internship
-- Bullet Points:
-  - Technical Skills:
-    - Proficiency in SAS for data analysis and statistical modeling.
-    - Mastery of Power BI for data visualization and reporting.
-    - Expertise in data manipulation, including table joins and feature engineering.
-  - Collaboration and Teamwork:
-    - Worked collaboratively with cross-functional teams to understand their data needs and requirements.
-    - Effective communication and collaboration ensured the successful completion of tasks and project goals.
-  - Soft Skills:
-    - Communication: Developed strong communication skills, both written and verbal, to convey complex technical concepts effectively.
-    - Problem-Solving: Honed problem-solving skills by addressing technical challenges and finding innovative solutions.
-    - Adaptability: Demonstrated adaptability in a dynamic work environment, embracing new tools and methodologies.
-    - Time Management: Efficiently managed time and resources to meet project deadlines.
-    - Attention to Detail: Developed a keen eye for detail to ensure data accuracy and quality.
+**Slide 2: Leveraging SHAP Values for Improvement**
 
-**Slide 2: Alignment with Future Goals and Continued Growth**
+*Title: Leveraging SHAP Values for Improvement*
 
-- Title: Alignment with Future Goals and Continued Growth
-- Bullet Points:
-  - Alignment with Future Goals:
-    - Aspiring Data Scientist: Proficiency in SAS and data analysis is crucial for data science roles.
-    - Business Intelligence Analyst: Mastery of Power BI enhances my ability to provide valuable insights through data visualization.
-    - Team Leader: Leadership and collaboration skills gained while leading a team of 8 members are essential for future leadership roles.
-  - Continued Growth:
-    - I am committed to continuous learning and growth in the field of data analytics.
-    - I plan to expand my skill set further and pursue advanced certifications in SAS and data science.
-    - My internship experience has laid a solid foundation for my career, and I look forward to contributing my skills and knowledge to future endeavors.
+- **Identifying Discrepancies:** I used SHAP values to scrutinize cases where the model's predictions for advisor performance in NPS differed significantly from actual results.
 
-Feel free to use these slides as a template for your internship review presentation. You can add visuals, graphics, and your personal touch to make the presentation engaging and informative
+- **Diagnosing Discrepancies:** This analysis helped diagnose areas where advisors were predicted to perform well or poorly but didn't align with real-world outcomes.
 
-Certainly, here's the content formatted for two PowerPoint slides:
+- **Optimizing eNPS:** Armed with this information, we strategized on how to optimize and improve our employee Net Promoter Score (eNPS) across the organization. These insights played a pivotal role in refining our approaches.
 
-**Slide 1: Current Life Expectancy Project**
+**Slide 3: Impact on eNPS and Organization**
 
-- Title: Current Life Expectancy Project
-- Bullet Points:
-  - Project Overview:
-    - Conducted under the guidance of the esteemed Kayla.
-    - Explored factors influencing life expectancy in various countries over a 10-year period.
-    - Analyzed lifestyle factors such as BMI, alcohol consumption, and national factors including GDP, healthcare expenditure, and disease prevalence (e.g., polio, diphtheria, measles, HIV).
-  - Methodology:
-    - Investigated connections between life expectancy predictions and Bupa population life expectancy data.
-    - Examined intriguing trends and patterns in life expectancy.
-  - Key Findings:
-    - Discovered significant correlations between lifestyle choices, disease prevalence, and life expectancy.
-    - Identified key factors contributing to variations in life expectancy across countries.
-  - Conclusion:
-    - Concluded with insights into the impact of lifestyle and healthcare factors on life expectancy.
+*Title: Impact on eNPS and Organization*
 
-**Slide 2: Impact and Future Insights**
+- **Boosting eNPS:** The strategies derived from SHAP value analysis had a direct impact on eNPS scores. We witnessed a notable increase in employee satisfaction and engagement, leading to higher eNPS ratings.
 
-- Title: Impact and Future Insights
-- Bullet Points:
-  - Impact:
-    - The project sheds light on the complex interplay between lifestyle choices, healthcare, and life expectancy.
-    - Provides valuable insights for policymakers and healthcare professionals to improve public health.
-  - Future Insights:
-    - Ongoing research will delve deeper into understanding these factors.
-    - Aim to develop predictive models for life expectancy and identify interventions to enhance it.
-  - Personal Growth:
-    - The project has expanded my skills in data analysis, research, and problem-solving.
-    - It aligns with my passion for public health and data-driven decision-making.
-  - Gratitude:
-    - Express heartfelt gratitude to Kayla for mentorship and guidance throughout the project.
-    - Thank the team for their collaboration and support.
+- **Positive Organizational Effects:** The improved eNPS scores had far-reaching effects on the organization. They correlated with higher employee retention rates, improved workplace culture, and heightened productivity.
 
-Feel free to use these slides as a template for your presentation, and customize them with visuals and graphics to make them engaging and informative.
+- **Continual Optimization:** This ongoing process of leveraging SHAP values and data-driven insights allowed us to continually optimize eNPS and enhance the overall employee experience.
 
-Certainly, here's the content as if you were presenting it in your own words on a single PowerPoint slide:
+These three slides capture your journey of understanding and utilizing SHAP values, along with the positive impact they had on eNPS and the organization as a whole.
 
-[Slide: Conclusion and Gratitude]
+to pinpoint areas for improvement, leading to better eNPS performance.
 
-Title: Conclusion and Gratitude
-
-- It's time to wrap up this incredible journey. I want to share some highlights and express my heartfelt gratitude.
-
-- First and foremost, to Bupa as a whole: Thank you for this fantastic opportunity.
-
-- I owe a massive thanks to the Data Analytics Team, brilliantly led by Priya, for their unwavering support throughout.
-
-- The Customer Analytics Team, under Joe's guidance, deserves a special mention for their invaluable insights.
-
-- A massive shoutout to the Data Science Team, led by the amazing Saul.
-
-- I'd like to acknowledge some extraordinary individuals who played a significant role:
-  - Adam, Rohan, Marian, Susa, Milan, Saul, Sofia, Eljon, Sarah, Ellen, the two Paolas, Suja, Trish, Isaac, Nahin, Dagmar, Tom, and the phenomenal Kayla.
-  - This list doesn't capture everyone, but you've all made an indelible mark on my journey.
-
-- Thank you for not just being colleagues, but for becoming an integral part of this incredible learning experience.
-
-- Your impact on my self-confidence and professional growth is immeasurable. It's been an honor working alongside each one of you.
-
-Feel free to copy and paste this text into your PowerPoint slide and adjust the formatting as needed.
+Enhancing Strategies: By identifying where advisors were predicted to excel or struggle but differed from actual results, we optimized our strategies.
