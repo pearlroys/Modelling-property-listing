@@ -1,29 +1,49 @@
-import matplotlib.pyplot as plt
+bucket_size = 20
+
+# Create an array of bucket edges
+bucket_edges = np.arange(-100, 101, bucket_size)
+
+# Calculate the average values for each bucket
+average_values = [col_y[(col_x >= edge) & (col_x < edge + bucket_size)].mean() for edge in bucket_edges]
+
+# Create the distribution plot
+plt.bar(bucket_edges[:-1], average_values, width=bucket_size, align='edge')
+
+# Set labels and title
+plt.xlabel('X-axis Buckets')
+plt.ylabel('Average Y-values')
+plt.title('Distribution of Average Y-values in X-axis Buckets')
+
+# Show the plot
+plt.show()
+
+
 import numpy as np
+import matplotlib.pyplot as plt
 
-# Assuming you have a DataFrame 'df' with columns 'average_predicted_nps' and 'actual_nps'
-average_predicted_nps = df['average_predicted_nps']
-actual_nps = df['actual_nps']
+# Sample data (replace this with your actual data)
+col_x = np.random.randint(-100, 100, size=100)
+col_y = np.random.randint(-100, 100, size=100)
 
-# Create an array of indices for each data point
-indices = np.arange(len(df))
+# Define the bucket size
+bucket_size = 20
 
-# Set the width of each bar
-bar_width = 0.35
+# Create an array of bucket centers
+bucket_centers = np.arange(-100, 101, bucket_size) + bucket_size / 2
 
-# Create a bar chart for actual NPS values
-plt.bar(indices, actual_nps, bar_width, label='Actual NPS', color='green', alpha=0.7)
+# Calculate the average values for each bucket
+average_values = [col_y[(col_x >= edge - bucket_size / 2) & (col_x < edge + bucket_size / 2)].mean() for edge in bucket_centers]
 
-# Add a horizontal line for the average predicted NPS
-plt.axhline(y=average_predicted_nps.iloc[0], color='blue', linestyle='--', label='Average Predicted NPS')
+# Create a line plot
+plt.plot(col_x, average_values, marker='o', linestyle='-', label='Average Values')
 
-# Add labels, title, and legend
-plt.xlabel('Data Point')
-plt.ylabel('NPS')
-plt.title('Comparison of Average Predicted NPS and Actual NPS')
-plt.xticks(indices, indices)
+# Set labels and title
+plt.xlabel('X-values (col_x)')
+plt.ylabel('Average Y-values')
+plt.title('Line Plot of Average Y-values vs. X-values')
+
+# Show the legend
 plt.legend()
 
-# Show the chart
-plt.tight_layout()
+# Show the plot
 plt.show()
