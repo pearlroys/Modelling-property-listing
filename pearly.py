@@ -1,23 +1,31 @@
-# Define the bucket size
-bucket_size = 20
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
 
-# Sort col_x in ascending order
-sorted_indices = np.argsort(col_x)
-sorted_x = col_x[sorted_indices]
-sorted_y = col_y[sorted_indices]
+# Your DataFrame and sorting logic
+# df = ...
 
-# Initialize lists to store x-values and average values
-x_values = []
-average_values = []
+# Create a figure and axis
+fig, ax = plt.subplots()
+fig.set_tight_layout(True)
 
-# Calculate the average values for each bucket
-for start in range(-100, 100, bucket_size):
-    end = start + bucket_size
-    mask = (sorted_x >= start) & (sorted_x < end)
-    x_values.extend(sorted_x[mask])
-    if np.any(mask):
-        average_y = sorted_y[mask].mean()
-        average_values.extend([average_y] * mask.sum())
+# Define the update function for the animation
+def update(year):
+    ax.clear()
+    ax.set_title(f'Year: {year}')
+    
+    # Filter data for the current year
+    data = df[df['Year'] == year]
+    
+    # Plot lines for each country
+    for country, group in data.groupby('Country'):
+        ax.plot(group['Year'], group['Life expectancy '], label=country)
+    
+    ax.set_xlabel('Year')
+    ax.set_ylabel('Life Expectancy')
+    ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
 
-# Create a scatter plot
-plt.scatter(x_values, average_values, label='Average Values')
+# Create the animation
+ani = FuncAnimation(fig, update, frames=df['Year'].unique(), repeat=False)
+
+# Display the animation
+plt.show()
