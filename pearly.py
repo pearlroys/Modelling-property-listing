@@ -1,31 +1,28 @@
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
-
-# Your DataFrame and sorting logic
-# df = ...
+# Sort the DataFrame by 'Year' for animation
+df_sorted = df.sort_values(by='Year')
 
 # Create a figure and axis
-fig, ax = plt.subplots()
-fig.set_tight_layout(True)
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.set_xlim(df_sorted['Year'].min(), df_sorted['Year'].max())
+ax.set_ylim(df_sorted['Life expectancy '].min(), df_sorted['Life expectancy '].max())
+line, = ax.plot([], [], lw=2)
+
+# Define the initialization function
+def init():
+    line.set_data([], [])
+    return line,
 
 # Define the update function for the animation
-def update(year):
-    ax.clear()
-    ax.set_title(f'Year: {year}')
-    
-    # Filter data for the current year
-    data = df[df['Year'] == year]
-    
-    # Plot lines for each country
-    for country, group in data.groupby('Country'):
-        ax.plot(group['Year'], group['Life expectancy '], label=country)
-    
-    ax.set_xlabel('Year')
-    ax.set_ylabel('Life Expectancy')
-    ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+def update(frame):
+    data = df_sorted[df_sorted['Year'] == frame]
+    x = data['Year']
+    y = data['Life expectancy ']
+    line.set_data(x, y)
+    ax.set_title(f'Year: {frame}')
+    return line,
 
 # Create the animation
-ani = FuncAnimation(fig, update, frames=df['Year'].unique(), repeat=False)
+anim = FuncAnimation(fig, update, frames=df_sorted['Year'].unique(), init_func=init, blit=True)
 
 # Display the animation
 plt.show()
