@@ -1,28 +1,22 @@
-# Sort the DataFrame by 'Year' for animation
-df_sorted = df.sort_values(by='Year')
+coeff corr =
+//x̄
+var __muX =calculate(AVERAGE(YourTable[x]))
+//ȳ
+var __muY=calculate(AVERAGE(YourTable[y]))
+//numerator
+var __numerator  =  sumx('YourTable',( [x]-__muX)*([y]-__muY))
+//denominator
+var __denominator=  SQRT(sumx('YourTable',([x]-__muX)^2)*sumx('YourTable',([y]-__muY)^2))
+return
+divide(__numerator,__denominator)
 
-# Create a figure and axis
-fig, ax = plt.subplots(figsize=(10, 6))
-ax.set_xlim(df_sorted['Year'].min(), df_sorted['Year'].max())
-ax.set_ylim(df_sorted['Life expectancy '].min(), df_sorted['Life expectancy '].max())
-line, = ax.plot([], [], lw=2)
 
-# Define the initialization function
-def init():
-    line.set_data([], [])
-    return line,
 
-# Define the update function for the animation
-def update(frame):
-    data = df_sorted[df_sorted['Year'] == frame]
-    x = data['Year']
-    y = data['Life expectancy ']
-    line.set_data(x, y)
-    ax.set_title(f'Year: {frame}')
-    return line,
-
-# Create the animation
-anim = FuncAnimation(fig, update, frames=df_sorted['Year'].unique(), init_func=init, blit=True)
-
-# Display the animation
-plt.show()
+R-squared Measure =
+VAR ActualValues = SUM('YourTable'[Life Expectancy])
+VAR PredictedValues = SUMX('YourTable', 'YourTable'[Predicted Life Expectancy])
+VAR Residuals = ActualValues - PredictedValues
+VAR SSTotal = SUMX('YourTable', ('YourTable'[Life Expectancy] - AVERAGE('YourTable'[Life Expectancy]))^2)
+VAR SSResiduals = SUMX('YourTable', Residuals^2)
+RETURN
+1 - (SSResiduals / SSTotal)
