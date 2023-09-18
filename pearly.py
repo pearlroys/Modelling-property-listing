@@ -1,22 +1,16 @@
-coeff corr =
-//x̄
-var __muX =calculate(AVERAGE(YourTable[x]))
-//ȳ
-var __muY=calculate(AVERAGE(YourTable[y]))
-//numerator
-var __numerator  =  sumx('YourTable',( [x]-__muX)*([y]-__muY))
-//denominator
-var __denominator=  SQRT(sumx('YourTable',([x]-__muX)^2)*sumx('YourTable',([y]-__muY)^2))
-return
-divide(__numerator,__denominator)
-
-
-
-R-squared Measure =
-VAR ActualValues = SUM('YourTable'[Life Expectancy])
-VAR PredictedValues = SUMX('YourTable', 'YourTable'[Predicted Life Expectancy])
-VAR Residuals = ActualValues - PredictedValues
-VAR SSTotal = SUMX('YourTable', ('YourTable'[Life Expectancy] - AVERAGE('YourTable'[Life Expectancy]))^2)
-VAR SSResiduals = SUMX('YourTable', Residuals^2)
-RETURN
-1 - (SSResiduals / SSTotal)
+coeff correl type =
+SWITCH(TRUE,
+        [coeff corr]=-1                          ,"Perfect negative correlation",
+        [coeff corr]>-1   &&  [coeff corr]<=-0.8 ,"Very strong negative correlation",
+        [coeff corr]>-0.8 &&  [coeff corr]<=-0.6 ,"Strong negative correlation",
+        [coeff corr]>-0.6 &&  [coeff corr]<=-0.4 ,"Moderate negative correlation",
+        [coeff corr]>-0.4 &&  [coeff corr]<=-0.2 ,"Weak negative correlation",
+        [coeff corr]>-0.2 &&  [coeff corr]<0     ,"Very weak negative correlation",
+        [coeff corr]=0                           ,"No correlation",
+        [coeff corr]>0    &&  [coeff corr]<0.2   ,"Very weak positive correlation",
+        [coeff corr]>=0.2 &&  [coeff corr]<0.4   ,"Weak positive correlation",
+        [coeff corr]>=0.4 &&  [coeff corr]<0.6   ,"Moderate positive correlation",
+        [coeff corr]>=0.6 &&  [coeff corr]<0.8   ,"Strong positive correlation",
+        [coeff corr]>=0.8 &&  [coeff corr]<1     ,"Very strong positive correlation",
+        [coeff corr]=1                           ,"Perfect positive correlation"
+)
