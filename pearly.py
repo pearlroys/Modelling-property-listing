@@ -1,16 +1,22 @@
 coeff correl type =
-SWITCH(TRUE,
-        [coeff corr]=-1                          ,"Perfect negative correlation",
-        [coeff corr]>-1   &&  [coeff corr]<=-0.8 ,"Very strong negative correlation",
-        [coeff corr]>-0.8 &&  [coeff corr]<=-0.6 ,"Strong negative correlation",
-        [coeff corr]>-0.6 &&  [coeff corr]<=-0.4 ,"Moderate negative correlation",
-        [coeff corr]>-0.4 &&  [coeff corr]<=-0.2 ,"Weak negative correlation",
-        [coeff corr]>-0.2 &&  [coeff corr]<0     ,"Very weak negative correlation",
-        [coeff corr]=0                           ,"No correlation",
-        [coeff corr]>0    &&  [coeff corr]<0.2   ,"Very weak positive correlation",
-        [coeff corr]>=0.2 &&  [coeff corr]<0.4   ,"Weak positive correlation",
-        [coeff corr]>=0.4 &&  [coeff corr]<0.6   ,"Moderate positive correlation",
-        [coeff corr]>=0.6 &&  [coeff corr]<0.8   ,"Strong positive correlation",
-        [coeff corr]>=0.8 &&  [coeff corr]<1     ,"Very strong positive correlation",
-        [coeff corr]=1                           ,"Perfect positive correlation"
-)
+VAR CorrelationValue = [coeff corr]
+VAR CorrelationType =
+    SWITCH (
+        TRUE (),
+        CorrelationValue = -1, "Perfect negative correlation",
+        CorrelationValue > -1 && CorrelationValue <= -0.8, "Very strong negative correlation",
+        CorrelationValue > -0.8 && CorrelationValue <= -0.6, "Strong negative correlation",
+        CorrelationValue > -0.6 && CorrelationValue <= -0.4, "Moderate negative correlation",
+        CorrelationValue > -0.4 && CorrelationValue <= -0.2, "Weak negative correlation",
+        CorrelationValue > -0.2 && CorrelationValue < 0, "Very weak negative correlation",
+        CorrelationValue = 0, "No correlation",
+        CorrelationValue > 0 && CorrelationValue < 0.2, "Very weak positive correlation",
+        CorrelationValue >= 0.2 && CorrelationValue < 0.4, "Weak positive correlation",
+        CorrelationValue >= 0.4 && CorrelationValue < 0.6, "Moderate positive correlation",
+        CorrelationValue >= 0.6 && CorrelationValue < 0.8, "Strong positive correlation",
+        CorrelationValue >= 0.8 && CorrelationValue < 1, "Very strong positive correlation",
+        CorrelationValue = 1, "Perfect positive correlation",
+        "Unknown"
+    )
+RETURN
+    CorrelationValue & " (" & CorrelationType & ")"
