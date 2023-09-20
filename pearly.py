@@ -1,12 +1,14 @@
-result_df = pd.DataFrame(columns=df.columns)
+# Define a custom aggregation function to select the first non-null value
+def first_non_null(series):
+    return next((val for val in series if not pd.isna(val)), None)
 
-# Iterate through unique patient IDs
-for patient_id in df['patient id'].unique():
-    # Filter rows for the current patient ID
-    patient_rows = df[df['patient id'] == patient_id]
-    
-    # Select the first non-null value for each column
-    result_row = patient_rows.apply(lambda x: next((val for val in x if not pd.isna(val)), None))
-    
-    # Append the result row to the result DataFrame
-    result_df = result_df.append(result_row, ignore_index=True)
+# Group by 'patient id' and aggregate columns using the custom function
+result_df = filtered_df.groupby('patient id').agg({
+    'company name': first_non_null,
+    'age': first_non_null,
+    'alcohol': first_non_null,
+    'bmi': first_non_null
+}).reset_index()
+
+# Display the resulting DataFrame
+print(result_df)
