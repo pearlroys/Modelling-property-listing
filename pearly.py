@@ -1,8 +1,12 @@
-# Pivot the DataFrame to merge rows based on 'entry'
-df_pivoted = df.pivot(index=['age', 'company name'], columns='entry', values='entry_value')
+result_df = pd.DataFrame(columns=df.columns)
 
-# Reset the index
-df_pivoted.reset_index(inplace=True)
-
-# Rename the columns if needed
-df_pivoted.columns.name = None
+# Iterate through unique patient IDs
+for patient_id in df['patient id'].unique():
+    # Filter rows for the current patient ID
+    patient_rows = df[df['patient id'] == patient_id]
+    
+    # Select the first non-null value for each column
+    result_row = patient_rows.apply(lambda x: next((val for val in x if not pd.isna(val)), None))
+    
+    # Append the result row to the result DataFrame
+    result_df = result_df.append(result_row, ignore_index=True)
