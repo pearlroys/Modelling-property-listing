@@ -1,6 +1,8 @@
-# Create separate columns for 'alcohol' and 'bmi' and fill them based on 'entry_value'
-df['alcohol'] = df.apply(lambda row: row['entry_value'] if row['entry'] == 'alcohol' else None, axis=1)
-df['bmi'] = df.apply(lambda row: row['entry_value'] if row['entry'] == 'bmi' else None, axis=1)
+# Pivot the DataFrame to merge rows based on 'entry'
+df_pivoted = df.pivot(index=['age', 'company name'], columns='entry', values='entry_value')
 
-# Drop the 'entry' and 'entry_value' columns
-df.drop(columns=['entry', 'entry_value'], inplace=True)
+# Reset the index
+df_pivoted.reset_index(inplace=True)
+
+# Rename the columns if needed
+df_pivoted.columns.name = None
