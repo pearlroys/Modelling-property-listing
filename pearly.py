@@ -1,9 +1,1 @@
-During my internship, I had the privilege of being under the guidance of Milan. Throughout this period, I witnessed qualities such as openness, approachability, authenticity, and the creation of a trust-centric environment being personified in his daily actions. While there are more attributes that can aptly describe Milan, these traits stood out as they were consistently demonstrated.
-
-Even as an intern under Milan's mentorship, I was encouraged to ask questions, offer suggestions, and provide feedback. His receptivity to inquiries and his willingness to engage in constructive dialogue exemplified his openness, which I greatly appreciated. 
-
-Our weekly catch-up sessions, typically held on Fridays, were particularly noteworthy. Milan ensured that I was well-informed about the week's activities, and he took the time to align them with my expectations. Even during moments when I felt overwhelmed, Milan's genuine concern and eagerness to address any concerns revealed an authenticity that is often rare in professional settings.
-
-When it comes to personal and professional development, Milan's commitment was unwavering. He actively identified areas where I could improve and communicated effectively to help me enhance my skills. His dedication to facilitating internal connections within the team to support my growth further underscored his reliability and confirmed his trustworthiness.
-
-Overall, Milan's leadership and mentorship cultivated a culture of openness, approachability, and authenticity, which fostered trust in his abilities as an exceptional leader and an empathetic mentor.
+石丽
