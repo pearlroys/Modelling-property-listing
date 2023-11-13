@@ -1,12 +1,15 @@
-with open(output_file, 'w', newline='') as csv_file:
-        fieldnames = ['description', 'sochigh', 'soclow']
-        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+ if "contracts" in data and isinstance(data["contracts"], list):
+        for dictionary in data["contracts"]:
+            if isinstance(dictionary, dict):
+                description = dictionary.get('description', '')
 
-        # Write the header
-        writer.writeheader()
+                # Check if 'edf' is in the description
+                if 'edf' in description.lower():
+                    parameters = dictionary.get('parameters', {})
+                    keys_with_description = {
+                        'description': description,
+                        'sochigh': parameters.get('sochigh'),
+                        'soclow': parameters.get('soclow')
+                    }
 
-        # Write the data
-        writer.writerows(result)
-
-output_file = 'output.csv'
-extract_keys_with_description_to_csv(data, output_file)
+                    result.append(keys_with_description)
