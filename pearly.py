@@ -1,12 +1,12 @@
-if "contracts" in data and isinstance(data["contracts"], list):
-        for dictionary in data["contracts"]:
-            if isinstance(dictionary, dict):
-                keys_with_description = {
-                    'description': dictionary.get('description'),
-                    'sochigh': dictionary.get('sochigh'),
-                    'soclow': dictionary.get('soclow')
-                }
+with open(output_file, 'w', newline='') as csv_file:
+        fieldnames = ['description', 'sochigh', 'soclow']
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
-                result.append(keys_with_description)
+        # Write the header
+        writer.writeheader()
 
-    return result
+        # Write the data
+        writer.writerows(result)
+
+output_file = 'output.csv'
+extract_keys_with_description_to_csv(data, output_file)
