@@ -1,1 +1,3 @@
-Following our investigation, we've determined that the controller at the site we're connected to is consistently reporting a value of 0 on the max discharge power Modbus register. This suggests an issue originating from the controller's end. Consequently, our gateway is receiving 0, leading to the miscalculation of the max power as 0.
+The optimization team has thoroughly examined the reported issue regarding missing dispatches,
+and currently, the dispatches API results for devices in production appear to be in order. 
+However, it's worth noting that at 8:23, there were instances of missing dispatches. The team is actively investigating the cause, and while the consumption book devices' dispatches appear fine, the reason for the earlier discrepancies is still under review. It's possible that it could have been a result of a lag with the dispatch API. Your patience and understanding are appreciated as we continue to address and resolve these concerns.
