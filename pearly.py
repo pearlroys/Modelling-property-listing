@@ -1,3 +1,6 @@
-The optimization team has thoroughly examined the reported issue regarding missing dispatches,
-and currently, the dispatches API results for devices in production appear to be in order. 
-However, it's worth noting that at 8:23, there were instances of missing dispatches. The team is actively investigating the cause, and while the consumption book devices' dispatches appear fine, the reason for the earlier discrepancies is still under review. It's possible that it could have been a result of a lag with the dispatch API. Your patience and understanding are appreciated as we continue to address and resolve these concerns.
+We conducted an investigation and implemented a solution to align the baseline calculator 
+with the optimiser's assumptions regarding state of charge (SOC) after a full outage. 
+This corrective measure aims to prevent the defaulting behavior that previously caused the issue. 
+The fix has been applied by disabling the emergency baselining behavior of the baseline calculator for the optimiser,
+ mitigating the risk of conflicts between the two. The solution is now in production, and we 
+will monitor its performance throughout the afternoon to ensure there are no further issues.
