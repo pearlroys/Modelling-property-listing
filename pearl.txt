@@ -1,5 +1,2 @@
-I just want to confirm that all users, including Carrington with read-only and trader access, as well as Erskine's users, have been assigned the appropriate roles such as EDF traders and read-only access. Additionally, OM access and other permissions for Erskine and Warrington have been granted to Caledon and Abercorn users.
+I just took a look at the telemetry data for 30/11, and it seems like the PNs are in sync with the NPs. Could you help me out by confirming the time periods where there might be no PNs?
 
-We are currently in the process of confirming that all values and parameters are accurate before proceeding with the go-live. However, we are still awaiting confirmation on the voltage at Erskine, which is currently showing as 45V but should be 67kV. Furthermore, there are discrepancies in the reported GWh values for America across SOE/Import/Energy, and the State of Charge (SOC) is noted as 78%. Simon is aware of these issues and is actively addressing them.
-
-Please let me know if you have any questions or if there's anything else that needs attention.
