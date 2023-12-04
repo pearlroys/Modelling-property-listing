@@ -1,2 +1,1 @@
-I just took a look at the telemetry data for 30/11, and it seems like the PNs are in sync with the NPs. Could you help me out by confirming the time periods where there might be no PNs?
-
+From our end, we noticed that instructions were dispatched to the system for full power operation between 6:30 PM and 7:30 PM. However, one of the generators did not initiate as expected, leading to an early ramp-down of the system. By 7:30 PM, some generators continued to operate, while others ceased. Please inform us if additional information is required.
