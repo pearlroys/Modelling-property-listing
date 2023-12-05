@@ -1,1 +1,3 @@
-From our end, we noticed that instructions were dispatched to the system for full power operation between 6:30 PM and 7:30 PM. However, one of the generators did not initiate as expected, leading to an early ramp-down of the system. By 7:30 PM, some generators continued to operate, while others ceased. Please inform us if additional information is required.
+As of now, we do not have any updates from our end. We've only been able to review the instructions sent by the gateway to the site, which I shared earlier. Unfortunately, we lack insights into why this issue occurred on our side. If there are any additional details available, we would greatly appreciate receiving them. make better
+
+
