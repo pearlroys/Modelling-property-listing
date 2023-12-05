@@ -1,3 +1,1 @@
-As of now, we do not have any updates from our end. We've only been able to review the instructions sent by the gateway to the site, which I shared earlier. Unfortunately, we lack insights into why this issue occurred on our side. If there are any additional details available, we would greatly appreciate receiving them. make better
-
-
+We've identified the root cause of the issue and are actively working on a resolution. Currently, we are in the process of confirming that the correct values are being transmitted to the grid in our submissions. It's important to note that the grid's perspective of the site remains accurate; however, the displayed PN values on the console are incorrect. Rest assured, a fix is in progress.
