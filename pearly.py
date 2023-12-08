@@ -1,18 +1,11 @@
-#!/bin/bash
+number_of_pds = len(answers ['physical_devices 1))
+for device in datal devices'1: 
 
-# Run the first script and save the output to a file
-./script1.sh > names1.txt
+    if devicel'id'] == answers| virtual_device_id']:
 
-# Run the second script and save the output to a file
-./script2.sh > names2.txt
+        answers l'energy_capacity'] = int (devicel'energyCapacity 1) / 1000000
+        # for pd's with > that 25m values, we need to divide the values by the number of PD's
 
-# Use comm to find names unique to each list
-unique_names_script1=$(comm -23 names1.txt names2.txt)
-unique_names_script2=$(comm -13 names1.txt names2.txt)
-
-# Print unique names for each script
-echo "Unique Names in Script 1:"
-echo "$unique_names_script1"
-
-echo "Unique Names in Script 2:"
-echo "$unique_names_script2"
+        if answers|'site_power'] > 25 or answers'energy_capacity 1 > 25:
+            answersI[]'site_power'] = (max(devicel maxImport'1, device [maxExport 1) /number_of_pds) / 1000000
+            answers'energy_capacity'] = (max (devicel'maxImport'1,device [maxExport 1) /number_of pds) / 1000000
