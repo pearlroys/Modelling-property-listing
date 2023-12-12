@@ -1,1 +1,7 @@
-Hi Sara, just to ensure I have a clear understanding, could you please clarify which table this information is extracted from? When you mention "hh_energy," are you referring to the hourly energy data table? Additionally, when you mention the value "11.66" for energy in/out, are you seeking an explanation for why this specific value is recorded?
+We've observed readings slightly above 10MW for the standard active power. It appears that these readings are accumulating, potentially causing an overall difference. Our console is displaying some notable spikes that seem to be impacting the data. These discrepancies might be contributing to the deviations we're observing.
+
+It's essential to note that these readings come directly from Ultimetrics, and the energy calculations we use are consistent across all sites. They are based on the active power received from each site. Since the site doesn't have a gateway, our ability to control the data is limited, and we can only calculate energy based on the active power received.
+
+This situation may be indicative of a site-related issue. Your insights into this matter would be highly valuable, and we appreciate your attention to resolving any potential discrepancies.
+
+Thank you for your understanding and cooperation.
