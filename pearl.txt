@@ -1,1 +1,7 @@
-We've set up automatic withdrawal alerts for London and America using these emails. The subscription for London has been confirmed, but it's still pending for America. These are the only sites that have been requested. Would you like alerts for all sites that have automatic withdrawal setup for them? Should we use the same emails as above?"
+Dear Team,
+
+We would like to bring to your attention an issue with the standard active power values we are receiving from ReRskine. In some instances, we are observing active power values exceeding 1 GW, which is significantly higher than the actual power being delivered by the asset. These inaccurate values are impacting the accuracy of our other calculations.
+
+We kindly request your assistance in investigating this matter and resolving the issue promptly. Please review the attached screenshot for an example of the erroneous active power values.
+
+We appreciate your prompt attention to this matter.
