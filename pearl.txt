@@ -1,2 +1,1 @@
-
-Apologies for any inconvenience caused. The initial ETA won't be achievable; we require an additional 2 hours before the complete data becomes available, expected around 13:00.
+We've set up automatic withdrawal alerts for London and America using these emails. The subscription for London has been confirmed, but it's still pending for America. These are the only sites that have been requested. Would you like alerts for all sites that have automatic withdrawal setup for them? Should we use the same emails as above?"
