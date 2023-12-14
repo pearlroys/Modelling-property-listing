@@ -1,7 +1,1 @@
-Dear Team,
-
-We would like to bring to your attention an issue with the standard active power values we are receiving from ReRskine. In some instances, we are observing active power values exceeding 1 GW, which is significantly higher than the actual power being delivered by the asset. These inaccurate values are impacting the accuracy of our other calculations.
-
-We kindly request your assistance in investigating this matter and resolving the issue promptly. Please review the attached screenshot for an example of the erroneous active power values.
-
-We appreciate your prompt attention to this matter.
+I trust this message finds you well. Considering the current data values and the upcoming week's schedule, it seems prudent to suggest rescheduling our meeting to early January. 
