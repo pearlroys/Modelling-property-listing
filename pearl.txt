@@ -1,1 +1,3 @@
-I trust this message finds you well. Considering the current data values and the upcoming week's schedule, it seems prudent to suggest rescheduling our meeting to early January. 
+We're currently facing challenges with filtering out values above 11MW in telemetry data sourced from the data lake. Filtering such large readings might significantly impact our daily readings, potentially affecting the site's operational assessment.
+
+Could we explore the possibility of addressing this issue at the data source?
