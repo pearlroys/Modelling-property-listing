@@ -1,3 +1,5 @@
-We're currently facing challenges with filtering out values above 11MW in telemetry data sourced from the data lake. Filtering such large readings might significantly impact our daily readings, potentially affecting the site's operational assessment.
+We recently performed a rerun of the ingestion job on November 20th due to an incident over the weekend. As part of incident response, backfilling was necessary, which inadvertently led to duplications in the availability job, currently operating in append mode.
 
-Could we explore the possibility of addressing this issue at the data source?
+Rest assured, our team is actively working on a solution to address this matter promptly.
+
+Thank you for your understanding.
