@@ -1,9 +1,12 @@
-Following the call with Hugo and Justine:
+I wanted to clarify a point regarding the recent [issue]. While a dispatch at that specific time might have been optimal, it wasn't feasible within the Optimizer's current capabilities.
 
-SOC Reduction: We're continuing efforts to reduce SOC, currently at 92.3%. New exports are scheduled to bring it down further.
-EDF Agreement:
-Throughputh Limit: EDF has agreed to a 36.5 MWh limit for today only.
-Bids: EDF is working on lowering bids for the site.
-Future Potential:
-Buffer increase possible once Rock Farms issue is resolved.
-Lower Bids: EDF is actively working on reducing bids for the site, with long-term buffer expansion potential once Rock Farms is resolved.
+The Optimizer excels at [explain its main functionalities]. Extending its scope beyond its current design could introduce unintended complexities and potentially hinder its overall performance.
+
+I understand the desire for more advanced dispatch options, and I'm confident we can explore those in the future as the Optimizer evolves.
+
+I observed a potential misunderstanding regarding the Optimizer's capabilities. While scheduling a dispatch at the mentioned time would have been optimal, it currently falls outside the framework of the Optimizer's functionalities.
+
+The Optimizer is designed to excel in [highlight main functionalities, e.g., real-time adjustments within specific constraints]. Pushing it beyond these limits at this stage might not align with its intended operations.
+
+I appreciate your understanding on this matter. If you have any further questions or suggestions, feel free to share them.
+
