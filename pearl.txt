@@ -1,5 +1,7 @@
-We recently performed a rerun of the ingestion job on November 20th due to an incident over the weekend. As part of incident response, backfilling was necessary, which inadvertently led to duplications in the availability job, currently operating in append mode.
+Hi Solar Power and SSE,
 
-Rest assured, our team is actively working on a solution to address this matter promptly.
+Following up on the recommended value of 21 MW for filtering, I wanted to confirm if we'll be moving forward with implementing this change.
 
-Thank you for your understanding.
+Could you please provide an update on the status and next steps?
+
+Thanks in advance for your time.
