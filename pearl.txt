@@ -1,7 +1,9 @@
-Hi Solar Power and SSE,
+Following the call with Hugo and Justine:
 
-Following up on the recommended value of 21 MW for filtering, I wanted to confirm if we'll be moving forward with implementing this change.
-
-Could you please provide an update on the status and next steps?
-
-Thanks in advance for your time.
+SOC Reduction: We're continuing efforts to reduce SOC, currently at 92.3%. New exports are scheduled to bring it down further.
+EDF Agreement:
+Throughputh Limit: EDF has agreed to a 36.5 MWh limit for today only.
+Bids: EDF is working on lowering bids for the site.
+Future Potential:
+Buffer increase possible once Rock Farms issue is resolved.
+Lower Bids: EDF is actively working on reducing bids for the site, with long-term buffer expansion potential once Rock Farms is resolved.
