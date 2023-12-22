@@ -1,1 +1,7 @@
-We're pleased to share the introduction of a new toggle feature for the Ng schedule sync. This enhancement provides traders with increased control and flexibility. For comprehensive details on its capabilities and how it can streamline your workflow, refer to the GitBook link. It is now available for use.
+This feature empowers traders by enabling the automatic retrieval of successful DR, DM, and DC auction results from the grid portal. It further streamlines the process of scheduling sites to deliver services on your behalf.
+
+
+
+
+
+
