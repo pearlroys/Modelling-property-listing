@@ -1,1 +1,3 @@
-Ultimetrics and Forsa mentioned the change in the Ethernet module and their intention to monitor it for output spikes. Have you been receiving these updates? I believe Ultimetrics and Forsa would be better positioned to inform about the spikes since it's not within our control. Please let me know if I can assist in any way.
+Hi team,
+
+Just following up on the Erskine output spikes exceeding 2GW. We're continuing to observe these elevated levels. Could you confirm if you've also been able to observe these spikes and if the necessary filters have been deployed as expected? Any updates or insights would be appreciated.
