@@ -1,1 +1,2 @@
-Could you please inform me if my assumption regarding the correction was incorrect or if there might be a more optimal approach? Your guidance on this matter would be greatly appreciated. Thank you for your time and consideration.
+I would like to kindly inform you that we will be activating schedule syncing for all EDF-testing sites and simulators. This action is necessary as the absence of schedules is triggering alarms on our end. By implementing this, we aim to ensure that dispatches are consistently scheduled.
+
