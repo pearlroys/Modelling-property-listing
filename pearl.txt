@@ -1,2 +1,3 @@
-I would like to kindly inform you that we will be activating schedule syncing for all EDF-testing sites and simulators. This action is necessary as the absence of schedules is triggering alarms on our end. By implementing this, we aim to ensure that dispatches are consistently scheduled.
+The updated performance report for the 22nd has been resubmitted to the grid. An assessment report generated during this process identified a complete loss of revenue for the first service point at 13:00.
 
+You can access the assessment report through the console or the API. K-factor reports for the 22nd will also be available once processed.
