@@ -1,14 +1,1 @@
-Subject: Clarification on SOC Discrepancies for WBB Black Reserve Contract
-
-Hi Sofia,
-
-I trust this message finds you well. Following our discussion this morning regarding the WBB black reserve contract, I'd like to provide clarity on the disparity between the State of Charge (SOC) displayed on the console and the SOC utilized by the optimizer.
-
-While the console's SOC reflects the physical device's capacity, it's important to note that the optimizer calculates SOC based on available energy, excluding the reserve. This distinction can be somewhat misleading since the console does not account for the reserved capacity.
-
-The optimizer is currently adhering to the 45%/65% low and high thresholds as specified in the contract. However, it interprets these percentages based on the total energy value rather than the proportion displayed on the console. This interpretation might result in discrepancies in the reported SOC.
-
-If you have any further questions or if there's a need for additional clarification, please feel free to reach out.
-
-Best regards,
-[Your Name]
+The optimizer indeed considers factors beyond prices, including losses and costs. To understand this behavior better, we'll investigate further. Additionally, it's important to confirm whether this behavior is consistent across various sites or specific to certain tabular platforms. Your insights are valuable as we aim for a comprehensive understanding. Thank you for bringing this to our attention.
