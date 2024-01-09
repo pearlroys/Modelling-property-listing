@@ -1,3 +1,14 @@
-The updated performance report for the 22nd has been resubmitted to the grid. An assessment report generated during this process identified a complete loss of revenue for the first service point at 13:00.
+Subject: Clarification on SOC Discrepancies for WBB Black Reserve Contract
 
-You can access the assessment report through the console or the API. K-factor reports for the 22nd will also be available once processed.
+Hi Sofia,
+
+I trust this message finds you well. Following our discussion this morning regarding the WBB black reserve contract, I'd like to provide clarity on the disparity between the State of Charge (SOC) displayed on the console and the SOC utilized by the optimizer.
+
+While the console's SOC reflects the physical device's capacity, it's important to note that the optimizer calculates SOC based on available energy, excluding the reserve. This distinction can be somewhat misleading since the console does not account for the reserved capacity.
+
+The optimizer is currently adhering to the 45%/65% low and high thresholds as specified in the contract. However, it interprets these percentages based on the total energy value rather than the proportion displayed on the console. This interpretation might result in discrepancies in the reported SOC.
+
+If you have any further questions or if there's a need for additional clarification, please feel free to reach out.
+
+Best regards,
+[Your Name]
