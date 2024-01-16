@@ -1,9 +1,5 @@
-going through all the sites for that sp on the 5th of january these wre the obersevation,not all sites were actively charging during this period. For those that were, a number of them displayed BOA's or transitioned to other services following that specific service period. This could potentially explain certain instructions received, as we understand that pricing is just one factor influencing the optimizer behavior. We acknowledge that costs, losses, and various other factors play a crucial role in decision-making.
+Hi Team,
 
-I would appreciate your insights and observations on this matter. If there are additional factors or considerations that should be taken into account, please do share.
-I've just finished reviewing all the sites for the SP on January 5th and wanted to share a few noteworthy observations:
+Just wanted to check in on the recent console issues that have been impacting the Dispatch and Telemetry tabs, particularly switching between sites. We appreciate you monitoring this, but some customers have raised concerns and I wanted to see if there's any update or ongoing work to address these challenges.
 
-Charging inconsistencies: Not all sites were charging consistently after the SP. This suggests factors beyond pricing might be influencing the optimizer's behavior.
-BOA activations and service switches: In some cases where charging did occur, we observed BOA activations or switches to alternative services. This further strengthens the possibility that the optimizer considers costs, losses, and other elements alongside pricing.
-I trust these observations might prove valuable in your ongoing analysis. Please let me know if you have any further questions or if there's anything else I can do to assist.
-
+Apologies if this has already been covered in another thread, I just wanted to make sure it's on our radar and gather any information available. Thanks for your time and effort on this.
